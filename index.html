@@ -1,31 +1,77 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- ページのタイトル -->
+    <title>ポートフォリオサイト</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- 追加: 自分で作成したCSSファイルへのリンク -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>ようこそlaplus3のWebページへ</h1>
-    </header>
-    <main>
-        <section>
-            <h2>自己紹介</h2>
-            <p>私は電子情報系の大学生です。プログラミングを勉強しています。</p>
-        </section>
-        <section>
-            <h2>趣味</h2>
+
+    <!-- 自己紹介 -->
+    <div class="about" id="about"> <!-- 追加: id属性を追加 -->
+        <h1>ABOUT</h1>
+        <div class="row">
+            <div class="description">
+                <p>
+                    <h1>経歴</h1>
+                    <br>理系大学生
+                    <br>2024年4月よりハードウェアエンジニアとして就職予定
+                    <br>
+                </p>
+            </div>
+        </div>
+        <div class="skills">
             <ul>
-                <li>漫画</li>
-                <li>読書</li>
+                <li><h1>資格</h1></li>
+                <li>TOEIC 685点</li> <!-- 修正: スペースを追加 -->
+                <li>基本情報技術者試験</li>
+                <li>Python3エンジニア認定基礎試験</li>
+                <li>Python3エンジニア認定データ分析試験</li>
+                <li>第一級陸上特殊無線技士</li>
+                <li>普通自動車免許</li>
             </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Web Page</p>
-    </footer>
-    <script src="scripts.js"></script>
+        </div>
+    </div>
+
+    <!-- 連絡先-->
+    <div class="contacts" id="contacts"> <!-- 修正: id属性を追加 -->
+        <h1>CONTACTS</h1>
+        <a href="https://twitter.com/laplus87338">
+            <i class="fab fa-twitter fa-3x" style="color:#1DA1F2;"></i> <!-- 修正: タグの終了タグを修正 -->
+        </a>
+    </div>
+
+    <!-- ナビゲーション -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">MY PORTFOLIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <!-- 修正: href属性の値を修正 -->
+                <a class="nav-link text-dark" href="#about">ABOUT</a>
+                <a class="nav-link text-dark" href="#contacts">CONTACTS</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BootstrapのJavaScriptとjQueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMN2RlEF/4uNUdzEZf5JRBWMqSDBSHZZ4z9tzTOBGOqmO8F9U5VxYHOcXtyYtRaa" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyTy6dQ9ASc6N3bXaA+V7K2FWMF5PfiD/s" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
